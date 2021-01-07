@@ -1,6 +1,6 @@
 # steg - steganography tool
 
-This is a steganography tool enabling you to conceil any file within a PNG file.
+This is a steganography tool enabling you to conceal any file within a PNG file.
 
 ## Requirements
 
