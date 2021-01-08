@@ -27,4 +27,7 @@ install: all
 	cp -f steg ${PREFIX}/bin
 	chmod 755 ${PREFIX}/bin/steg
 
-.PHONY: all options clean install
+uninstall:
+	rm -f ${PREFIX}/bin/steg
+
+.PHONY: all options clean install uninstall
