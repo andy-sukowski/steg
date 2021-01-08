@@ -48,7 +48,6 @@ void hide_file(char *filename, char *src_png_name, char *out_png_name)
 	printf("sizeof(buffer) = %ld\n", sizeof(buffer));
 
 	read_png(src_png_name);
-
 	printf("width: %d | height: %d | channels: %d\n", width, height, channels);
 
 	if ((CHAR_BIT * sizeof(buffer)) > (width * height * channels)) {
@@ -89,6 +88,7 @@ void read_file(char *filename, char *png_name)
 	}
 
 	read_png(png_name);
+	printf("width: %d | height: %d | channels: %d\n", width, height, channels);
 
 	long fsize = 0;
 	short ib;
