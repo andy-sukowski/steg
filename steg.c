@@ -45,7 +45,7 @@ void hide_file(char *filename, char *src_png_name, char *out_png_name)
 	buffer[3] = fsize;
 
 	fread(&buffer[4], fsize, 1, fp);
-	printf("sizeof(buffer) = %ld\n", sizeof(buffer));
+	printf("sizeof(buffer) = %zu\n", sizeof(buffer));
 
 	read_png(src_png_name);
 	printf("width: %d | height: %d | channels: %d\n", width, height, channels);
@@ -102,7 +102,7 @@ void read_file(char *filename, char *png_name)
 
 	unsigned char buffer[4 + fsize];
 	memset(buffer, 0, sizeof(buffer));
-	printf("sizeof(buffer) = %ld\n", sizeof(buffer));
+	printf("sizeof(buffer) = %zu\n", sizeof(buffer));
 
 	long i;
 	for (i = 0; i < sizeof(buffer); i++) {
